@@ -19,10 +19,6 @@ export class TwitchBot {
         });
         this.openai = new OpenAI({apiKey: openai_api_key});
         this.enable_tts = enable_tts;
-        // Add these lines here, below the existing properties
-        this.messageCounter = 0;  // Initialize message counter
-        this.minMessagesBeforeReply = 1;  // Minimum number of user's messages before reply
-        this.maxMessagesBeforeReply = 2;  // Maximum number of user's messages before reply
     }
 
 
@@ -190,27 +186,4 @@ export class TwitchBot {
             }
         })();
     }
-    listen() {
-        this.client.on('message', (channel, tags, message, self) => {
-            // Ignore echoed messages.
-            if(self) return;
-    
-            // Increment message counter
-            this.messageCounter++;
-    
-            // Check if message counter is between 5 and 10
-            if (this.messageCounter >= this.minMessagesBeforeReply && this.messageCounter <= this.maxMessagesBeforeReply) {
-                // Send a message interact with viewer
-                this.client.say(channel, ' Test of interaction ');
-    
-                // Reset message counter
-                this.messageCounter = 0;
-            }
-    
-        });
-    }
-    
-    this.client.on('message', (message) => {
-    console.log('message:', message);
-    });
 }
