@@ -210,14 +210,7 @@ export class TwitchBot {
         });
     }
     
-    this.client.on('message', (channel, tags, message, self) => {
-    console.log('channel:', channel);
-    console.log('tags:', tags);
+    this.client.on('message', (message) => {
     console.log('message:', message);
-    console.log('self:', self);
-
-    if (!self) {
-        // continue as before
-    }
     });
 }
