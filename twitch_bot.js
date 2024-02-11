@@ -207,9 +207,17 @@ export class TwitchBot {
                 this.messageCounter = 0;
             }
     
-            // existing code...
-            
-            this.client.say(this.channel, this.generateMessage(res?.data?.choices[0]?.text));
         });
     }
+    
+    this.client.on('message', (channel, tags, message, self) => {
+    console.log('channel:', channel);
+    console.log('tags:', tags);
+    console.log('message:', message);
+    console.log('self:', self);
+
+    if (!self) {
+        // continue as before
+    }
+    });
 }
