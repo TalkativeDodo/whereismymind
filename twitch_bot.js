@@ -19,11 +19,12 @@ export class TwitchBot {
         });
         this.openai = new OpenAI({apiKey: openai_api_key});
         this.enable_tts = enable_tts;
+        // Add these lines here, below the existing properties
+        this.messageCounter = 0;  // Initialize message counter
+        this.minMessagesBeforeReply = 1;  // Minimum number of user's messages before reply
+        this.maxMessagesBeforeReply = 2;  // Maximum number of user's messages before reply
     }
-    // Add these lines here, below the existing properties
-    this.messageCounter = 0;  // Initialize message counter
-    this.minMessagesBeforeReply = 1;  // Minimum number of user's messages before reply
-    this.maxMessagesBeforeReply = 2;  // Maximum number of user's messages before reply
+
 
     addChannel(channel) {
         // Check if channel is already in the list
