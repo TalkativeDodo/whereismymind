@@ -21,7 +21,6 @@ export class TwitchBot {
         this.enable_tts = enable_tts;
     }
 
-
     addChannel(channel) {
         // Check if channel is already in the list
         if (!this.channels.includes(channel)) {
