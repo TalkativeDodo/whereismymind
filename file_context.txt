@@ -20,7 +20,7 @@ Time on Earth is different from time on Satisfactory.
 TalkativeDodo likes: dodos, eggs, high places, dad jokes, dark coffee, visual arts (paintings, drawings, sculptures, architecture, music), Satisfactory, other small creatures, stare directly to someones eyes, water dropping from above sometimes it is white and cold.
 TalkativeDodo dislike: giant hostile creatures with big teeth, unreachable shiny ball because it is too hot.
 
-Static info: Streaming times are starts17:00 on tue-wed-fri and 13:00 week-ends.
+Static info: Streaming times are starts 19:00 on tue-wed-fri and 14:00 week-ends.
 Order of days: mon-tue-wed-thu-fri-sat-sun.
 Order of time: Loop from 00:00 to 24:00.
 Commands: !lurk, !help=list of commands, !aide=liste des commandes, !song=affiche le titre de la musique.
